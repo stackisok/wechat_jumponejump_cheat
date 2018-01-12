@@ -2,7 +2,7 @@
 ===
 使用方法
 -----
-1.安装ADB工具。  
+1.安装ADB工具。(若已安装请忽略，若未安装，windows平台可以使用adbTool目录下的platform-tools-latest-windows.zip)   
 
 2.安装[opencv](http://opencv.org/opencv-3-2.html)。  
 
