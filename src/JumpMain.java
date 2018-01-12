@@ -32,9 +32,14 @@ public class JumpMain {
     }
     public static void jumpOneTime(){
 
+        try {
         //截图后保存到本地
-        executeCommand("adb shell screencap -p /sdcard/1.png");
-        executeCommand("adb pull /sdcard/1.png  d:/jumpCheat/1.png");
+            executeCommand("adb shell screencap -p /sdcard/1.png");
+            executeCommand("adb pull /sdcard/1.png  d:/jumpCheat/1.png");
+         }catch (Exception e){
+            e.printStackTrace();
+
+        }
         //引用opencv库
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         //读取本地图片，src是彩色,matchSrc是灰度图，用来match棋子
